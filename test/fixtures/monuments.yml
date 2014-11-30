@@ -3,6 +3,7 @@
 one:
   name: MyString
   description: MyString
+  image: MyString
   locality: MyString
   latitude: 9.99
   longitude: 9.99
@@ -10,6 +11,7 @@ one:
 two:
   name: MyString
   description: MyString
+  image: MyString
   locality: MyString
   latitude: 9.99
   longitude: 9.99
