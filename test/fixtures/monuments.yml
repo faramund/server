@@ -4,6 +4,7 @@ one:
   name: MyString
   description: MyString
   image: MyString
+  game_name: MyString
   locality: MyString
   latitude: 9.99
   longitude: 9.99
@@ -12,6 +13,7 @@ two:
   name: MyString
   description: MyString
   image: MyString
+  game_name: MyString
   locality: MyString
   latitude: 9.99
   longitude: 9.99

@@ -18,7 +18,7 @@ class MonumentsControllerTest < ActionController::TestCase
 
   test "should create monument" do
     assert_difference('Monument.count') do
-      post :create, monument: { description: @monument.description, image: @monument.image, latitude: @monument.latitude, locality: @monument.locality, longitude: @monument.longitude, name: @monument.name }
+      post :create, monument: { description: @monument.description, image: @monument.image, game_name: @monument.game_name, latitude: @monument.latitude, locality: @monument.locality, longitude: @monument.longitude, name: @monument.name }
     end
 
     assert_redirected_to monument_path(assigns(:monument))
@@ -35,7 +35,7 @@ class MonumentsControllerTest < ActionController::TestCase
   end
 
   test "should update monument" do
-    patch :update, id: @monument, monument: { description: @monument.description, image: @monument.image, latitude: @monument.latitude, locality: @monument.locality, longitude: @monument.longitude, name: @monument.name }
+    patch :update, id: @monument, monument: { description: @monument.description, image: @monument.image, game_name: @monument.game_name, latitude: @monument.latitude, locality: @monument.locality, longitude: @monument.longitude, name: @monument.name }
     assert_redirected_to monument_path(assigns(:monument))
   end
 

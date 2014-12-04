@@ -9,6 +9,7 @@ class ApiController < ApplicationController
               locality: monument.locality,
               description: monument.description,
               image: monument.image,
+              game_name: monument.game_name,
               latitude: monument.latitude,
               longitude: monument.longitude
             }
