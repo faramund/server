@@ -28,7 +28,7 @@ class ApiController < ApplicationController
         render :status=>201,
             json: {
               status:201,
-              monuments: monuments.collect(&:name).join(", ")
+              monuments: monuments.collect(&:name).join(",")
             }
       else
         render :status=>201,

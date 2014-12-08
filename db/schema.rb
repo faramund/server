@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141204100727) do
+ActiveRecord::Schema.define(version: 20141208174634) do
 
   create_table "monuments", force: true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description", limit: 255
     t.string   "locality"
-    t.decimal  "latitude",    precision: 12, scale: 2
-    t.decimal  "longitude",   precision: 12, scale: 2
+    t.string   "latitude",    limit: 12
+    t.string   "longitude",   limit: 12
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image"
